@@ -5,6 +5,7 @@ def calculate():
 - для вычитания
 * для произведения
 / для деления
+^ для возведения в степень (2е число показатель)
 ''')
 
     number_1 = int(input('Введите первое число: '))
@@ -21,6 +22,9 @@ def calculate():
 
     elif operation == '/':
         print('{} / {} = {}'.format(number_1, number_2, (number_1 / number_2)))
+
+    elif operation == '^':
+        print('{} ^ {} = {}'.format(number_1, number_2, (number_1 ** number_2)))
 
     else:
         print('Вы ввели неверную математическую операцию,\n'
